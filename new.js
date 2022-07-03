@@ -4,6 +4,8 @@ function addTodo() {
   var _inputVal = document.getElementById("todo_data").value;
   if (_inputVal!==""){
   var _li = document.createElement("li")
+  var p = document.createElement("span")
+  var divv = document.createElement("span")
   var liText = document.createTextNode(_inputVal)
   var db = document.createElement("button")
   var dba = document.createTextNode("Delete")
@@ -11,14 +13,20 @@ function addTodo() {
   var eb = document.createElement("button")
   var eba = document.createTextNode("edit")
   eb.setAttribute("onclick","edittodo(this)")
+  p.setAttribute("id","cc")
 
 
   db.appendChild(dba);
   eb.appendChild(eba);
-  _li.appendChild(liText);
-  _li.appendChild(db);
-  _li.appendChild(eb);
+  divv.appendChild(db);
+  divv.appendChild(eb);
+
+  p.appendChild(liText)
+  _li.appendChild(p);
+  
+  _li.appendChild(divv);
   list.appendChild(_li);
+  console.log(list)
   
   
   clearall()
@@ -36,13 +44,13 @@ function clearall(){
 
 }
 function deletetodo(z){
-  z.parentNode.remove();
+  (z.parentNode).parentNode.remove();
 }
 
 function edittodo(z){
   var a =prompt("enter Your value","Value")
   var parent = z.parentNode;
-  parent.firstChild.data =a;
+  (parent).parentNode.firstChild.innerHTML=a;
 
   // var db = document.createElement("button")
   // var dba = document.createTextNode("Delete")

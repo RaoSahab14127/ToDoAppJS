@@ -2,20 +2,29 @@
 
 
 #main{
-    height: 200px;
-    width: 100%;
+    height: 80vh;
+    width: 80vw;
     background-color: aquamarine;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
+    flex-direction: column;
+    border-radius: 50px;
+}
+.bb{
+    height: 100%;
+    width: 70px;
+    background-color: rgb(65, 167, 133);
 }
 button{
-    height: 50px;
-    width: 100px;
     background-color: rgb(65, 167, 133);
+    height: 40px;
+
+    
 }
 #scr>input{
     padding: 15px;
+    background-color: aquamarine;
 }
 button:hover{
     background-color: blanchedalmond;
@@ -23,4 +32,48 @@ button:hover{
 }
 ul{
     list-style-type: none;
+    
+}
+
+body{
+    display: flex;
+    justify-content: center;
+}
+*{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+ul{
+    display: flex;
+    flex-direction: column;
+    width: 83%;
+    justify-content: flex-start;
+    height: 30vh;
+    align-items:flex-start;
+    overflow-y:scroll; 
+ 
+
+}
+::-webkit-scrollbar{
+    width: 5px;
+    background-color: aquamarine;
+}
+::-webkit-scrollbar-thumb{
+    width: 5px;
+    height: 0px;
+    background-color: rgb(1, 99, 66);
+
+}
+
+
+li{display: flex;
+flex-direction: row;
+width: 100%;
+
+}
+
+#cc{
+    width:50vw;
+    overflow-x: scroll ;
+    border: 1px solid rgb(1, 99, 66);
+    border-radius: 2px;
 }
