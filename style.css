@@ -1,0 +1,26 @@
+
+
+
+#main{
+    height: 200px;
+    width: 100%;
+    background-color: aquamarine;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+button{
+    height: 50px;
+    width: 100px;
+    background-color: rgb(65, 167, 133);
+}
+#scr>input{
+    padding: 15px;
+}
+button:hover{
+    background-color: blanchedalmond;
+
+}
+ul{
+    list-style-type: none;
+}
